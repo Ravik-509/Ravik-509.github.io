@@ -45,6 +45,30 @@ textarea:focus {
   cursor: pointer;
   background: #e6a100;
 }
+.form-input {
+  display: block;
+  margin: 0 0 2rem;
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+.form label {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  padding: 0.5rem;
+  font-family: 'ProximaNova_reg', sans-serif;
+  font-size: 1.3rem;
+  background-color: #ffffff;
+}
+.form-btn {
+  display: block;
+  width: 100%;
+  height: 5.5rem;
+  font-size: 1.6rem;
+}
 /* Typography */
 section {
   padding: 10rem 0;
@@ -115,30 +139,6 @@ section {
 }
 .main-form-header strong {
   font-size: 1.9rem;
-}
-.main-form-input {
-  display: block;
-  margin: 0 0 2rem;
-  width: 100%;
-  border: 1px solid #dddddd;
-  border-radius: 5px;
-  padding: 1.5rem;
-}
-.main-form label {
-  position: absolute;
-  display: inline-block;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-  padding: 0.5rem;
-  font-size: 1.3rem;
-  background-color: #ffffff;
-}
-.main-form-btn {
-  display: block;
-  width: 100%;
-  height: 5.5rem;
-  font-size: 1.6rem;
 }
 .main-form small {
   display: block;
@@ -268,6 +268,7 @@ section {
   width: 60%;
 }
 .feedback {
+  position: relative;
   background: url(../img/feedback/feedback-bg.jpg) no-repeat center;
   background-size: cover;
 }
@@ -326,6 +327,72 @@ section {
 .feedback-slider-btn img {
   width: 50%;
 }
+.feedback-form {
+  margin-top: 5rem;
+  padding: 4rem 10rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+.feedback-form h3 {
+  margin-bottom: 2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2rem;
+}
+.feedback-btn {
+  max-width: 30rem;
+  margin: auto;
+}
+.hand {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 30rem;
+}
+.scheme {
+  background: url(../img/scheme/scheme-bg.png) bottom -10rem right -15rem no-repeat;
+  padding-bottom: 0;
+  background-size: 65rem;
+}
+.scheme-block {
+  min-height: 30rem;
+}
+.scheme-block h3 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2rem;
+}
+.all-inclusive {
+  background: #f5f5f5;
+}
+.all-inclusive .media {
+  min-height: 9rem;
+}
+.all-inclusive .media h4 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 1.6rem;
+}
+.all-inclusive .media p {
+  font-size: 1.1rem;
+}
+.circle {
+  display: inline-block;
+  background-color: #00b700;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.circle-border {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  padding: 0.3rem;
+  border: 2px solid #00b700;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+  color: #ffffff;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 1.9rem;
+}
 .popup {
   display: none;
   position: fixed;
@@ -365,6 +432,14 @@ section {
 .popup-header {
   font-family: 'ProximaNova_bold', sans-serif;
 }
+@media (max-width: 1199px) {
+  .feedback .fotorama {
+    margin-bottom: 3rem;
+  }
+  .all-inclusive .media {
+    min-height: 11rem;
+  }
+}
 @media (max-width: 991px) {
   .main {
     background-position: top right;
@@ -390,15 +465,37 @@ section {
   .section-header_light {
     margin-bottom: 0;
   }
+  .hand {
+    display: none;
+  }
+  .fotorama {
+    margin-bottom: 3rem;
+  }
 }
 @media (max-width: 767px) {
   .main {
     background-position: top left;
+  }
+  .main h1 {
+    font-size: 3rem;
   }
   .header {
     text-align: center;
   }
   .wrap-block {
     text-align: center;
+  }
+  .feedback-prev-btn {
+    left: 0;
+  }
+  .feedback-next-btn {
+    right: 0;
+  }
+  .scheme {
+    background: none;
+    text-align: center;
+  }
+  .scheme-block {
+    min-height: 20rem;
   }
 }
