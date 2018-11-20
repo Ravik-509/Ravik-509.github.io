@@ -45,7 +45,11 @@ textarea:focus {
   cursor: pointer;
   background: #e6a100;
 }
-.form-input {
+.form {
+  padding: 2rem;
+}
+.form-input,
+.form-textarea {
   display: block;
   margin: 0 0 2rem;
   width: 100%;
@@ -459,6 +463,7 @@ section {
   padding-top: 5rem;
 }
 .materials-link {
+  text-align: bottom;
   color: #00b700;
   border-bottom: 1px dotted #00b700;
 }
@@ -505,12 +510,52 @@ section {
 .upsell-block p {
   font-size: 2rem;
 }
+/* Контакти */
+.contacts {
+  background: #ffffff url(../img/contacts/contacts-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.contacts h2 {
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.contacts p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.contacts-link {
+  display: inline-block;
+  color: #14111a;
+  border-bottom: 1px dotted #14111a;
+}
+.contacts-link:hover {
+  color: #000000;
+}
+.contacts-form h2 {
+  font-size: 1.8rem;
+  font-family: 'ProximaNova_reg', sans-serif;
+  margin-bottom: 3rem;
+}
+/* Оформление подвала (footer) */
+footer {
+  padding: 4rem 0;
+}
+.footer-contacts {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+.footer-contacts p {
+  margin: 0;
+}
+.footer-dev-logo {
+  text-align: right;
+}
 .popup {
   display: none;
   position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   z-index: 9;
@@ -595,6 +640,22 @@ section {
   .tour {
     background: none;
     background-color: #f5f5f5;
+  }
+  .contacts {
+    background: none;
+    background-color: #f5f5f5;
+  }
+  .contacts-form {
+    margin-bottom: 3rem;
+  }
+  footer {
+    text-align: center;
+  }
+  .footer-contacts {
+    margin: 2rem 0;
+  }
+  .footer-dev-logo {
+    text-align: center;
   }
 }
 @media (max-width: 767px) {
